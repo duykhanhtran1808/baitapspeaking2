@@ -119,7 +119,7 @@ socket.on('news', (data) => {
 
 // Cau hinh cho 
 
-navigator.mediaDevices.getUserMedia({ audio: true, video: false }).then(function (mediaStreamObj) {
+navigator.mediaDevices.getUserMedia({ audio: true, video: true }).then(function (mediaStreamObj) {
   let video = document.querySelector('video');
 
   start.addEventListener('click', (ev) => {
